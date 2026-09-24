@@ -21,7 +21,7 @@
 **SAY:**
 > "In Sprint 2, the MEETMINT title and the Send OTP button were always blue regardless of the theme. In Sprint 3, we made them fully theme-aware."
 
-**SHOW:** Open `frntend/src/index.css` — show the theme variable blocks
+**SHOW:** Open `frontend/src/index.css` — show the theme variable blocks
 
 ```css
 [data-theme="blue"] {
@@ -94,7 +94,7 @@
 **SAY:**
 > "The Ask AI feature existed in Sprint 2 as a basic text input. In Sprint 3, it's now powered by the live RAG pipeline."
 
-**SHOW:** Open `frntend/src/Dashboard.jsx` — show the Ask AI section
+**SHOW:** Open `frontend/src/Dashboard.jsx` — show the Ask AI section
 
 **SAY:**
 > "When a user types a question and hits send, the frontend posts to `/api/ask` with the project ID and question. The backend fetches the transcript, chunks it, runs similarity search, and returns a grounded answer."
@@ -125,7 +125,7 @@ const data = await res.json();
 **SHOW:** Run in terminal:
 
 ```bash
-cd frntend
+cd frontend
 npx vitest run
 ```
 
@@ -138,7 +138,7 @@ npx vitest run
 | `ProcessingScreen.test.jsx` | 10 | All 6 steps render, progress bar at 0%, file name display, default filename fallback, Cancel button, ETA label, MeetMint header |
 | `RegisterPage.test.jsx` | 8 | All input fields, Sign Up button, Sign In navigation, empty field error, short password error, mismatch error, name input, brand logo |
 
-**SHOW:** Open `frntend/src/__tests__/Sprint3.test.jsx`
+**SHOW:** Open `frontend/src/__tests__/Sprint3.test.jsx`
 
 ```jsx
 it('renders the MEETMINT brand title', () => {
@@ -154,7 +154,7 @@ it('renders the MEETMINT brand title', () => {
 **SAY:**
 > "Sprint3.test.jsx has 17 tests that verify the new theme-aware components. For example, this test confirms the MEETMINT brand title renders correctly on the login page."
 
-**SHOW:** Open `frntend/src/__tests__/ProcessingScreen.test.jsx`
+**SHOW:** Open `frontend/src/__tests__/ProcessingScreen.test.jsx`
 
 ```jsx
 it('renders all 6 processing steps', () => {
@@ -175,7 +175,7 @@ it('renders all 6 processing steps', () => {
 **SAY:**
 > "ProcessingScreen.test.jsx has 10 tests covering the new processing pipeline UI — verifying all 6 steps render, the progress bar initializes at 0%, and the cancel button works."
 
-**SHOW:** Open `frntend/src/__tests__/RegisterPage.test.jsx`
+**SHOW:** Open `frontend/src/__tests__/RegisterPage.test.jsx`
 
 ```jsx
 it('shows error for password mismatch', () => {

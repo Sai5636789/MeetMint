@@ -12,7 +12,7 @@ start "MeetMint Backend" cmd /k "cd backend && go run ."
 
 :: 3. Start Frontend
 echo Starting Vite Frontend...
-cd frntend
+cd frontend
 npm install && npm run dev
 
 pause

@@ -6,7 +6,7 @@ MeetMint is a premium **AI-powered Productivity Dashboard** that transforms raw 
 ---
 
 ## 🏗️ Project Architecture & Tech Stack
-- **Frontend** ([`/frntend`](/frntend)): React 18 + Vite. Powered by Framer Motion, Canvas Particles, and premium Glassmorphism design tokens.
+- **Frontend** ([`/frontend`](/frontend)): React 18 + Vite. Powered by Framer Motion, Canvas Particles, and premium Glassmorphism design tokens.
 - **Backend** ([`/backend`](/backend)): Go (Golang) REST API. Handles SQLite persistence, secure OTP authentication, and the RAG intelligence orchestration.
 - **AI Core**:
   - **Gemini Pro Integration**: High-speed, high-accuracy transcription analysis and task extraction.
